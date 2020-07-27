@@ -1,0 +1,81 @@
+.box{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+.main{
+    margin-top: 250px;
+    font-size: 50px;
+    opacity: 0;
+    animation: new 5s;
+   
+}
+
+.ani{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    align-content: center;
+    display: inline-block;
+    margin: 8px;
+    animation: dance 2.5s ease-in-out 2;
+}
+
+.nottoshow{
+    opacity: 0;
+}
+
+@keyframes new{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes dance{
+    0%, 100%{
+        transform: scale(1);
+        background-color: yellowgreen;
+    }
+    25%, 75%{
+        
+        background-color: orange;
+    }
+    50%{
+        transform: scale(0.3);
+        background-color: red;
+    }
+}
+
+div:nth-child(0){
+    animation-delay: 0s;
+}
+div:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+div:nth-child(2){
+    animation-delay: 0.40s;
+}
+
+div:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+div:nth-child(4){
+    animation-delay: 0.8s;
+}
+
+div:nth-child(5){
+    animation-delay: 1s;
+}
+
+div:nth-child(6){
+    animation-delay: 1.20s;
+}
+
