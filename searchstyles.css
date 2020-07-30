@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.s > input{
+.s >label> input{
     width: 30%;
     padding: 12px 20px;
   margin: 50px 0 8px 0;
@@ -19,7 +19,7 @@
 
 
 
-.s > input[type=text]:focus {
+.s >label> input[type=text]:focus {
     background-color: #e7e7e7;
     transition: 0.4s;
   }
