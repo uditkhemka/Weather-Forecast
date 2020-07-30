@@ -1,8 +1,8 @@
 function function1(){
-    window.open('weather.html');
+    window.open('weatherofcity.html');
 }
 
 function function2() {
     
-    window.open('weather.html');
+    window.open('weatherofcurr.html');
 }
