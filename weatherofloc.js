@@ -16,7 +16,7 @@ if (navigator.geolocation) {
 function showPosition(position) {
   longt=position.coords.longitude;
   lat=position.coords.latitude;
-  x.innerHTML = longt;
+  x.innerHTML = "Please Wait...";
 //console.log(longt);
 //longt=document.getElementById("demo");
   $(document).ready(function(){     //this code running before page loading so put inside showPositition
@@ -31,11 +31,19 @@ function showPosition(position) {
 
   //here we find the city of current location
     $.ajax(settings).done(function (data) {
-      console.log(data);
-      
+      place=data.address.city;
+      console.log(place);
+      valueSender();
     });
-
+    
     //now we use the current city
+    function valueSender(){
+      localStorage.setItem("city",place);
+      localStorage.setItem("value",1);
+      window.location.href="weatherofcity.html";
+    }
+
+    
     
   }); 
 
