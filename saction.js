@@ -1,14 +1,16 @@
 var place;
 
 
-function function1(){
-    place=document.getElementById("userinput");
+function function1() {
+    place=document.getElementById("userinput").value;
     console.log(place);
-    localStorage.setItem("city1",place);
-    //localStorage.setItem("value",0);
-   // window.location.href="weatherofcity.html";
-    window.open('weatherofcity.html');
+    localStorage.setItem("city",place);
+    localStorage.setItem('value',0);
+    window.location.href="weatherofcity.html";
+    
 }
+
+
 
 function function2() {
     
