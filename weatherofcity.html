@@ -5,21 +5,23 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Page Title</title>
-        <style>
-            #demo{
-                text-align: center;
-                color: red;
-                font-size: 30px;
-            }
-        </style>
+        <title>Weather app</title>
+  <link rel="stylesheet" href="weather.css" />
         <script src="weatherofcities.js"></script>
     </head>
     <body>
-        <div class="weather">
-            <img class="icon">
-            <p class="weather-info"></p>
-            <p class="temp"></p>
-        </div>
+       <div class="app_wrap">
+        <main>
+            <section class="location">
+              <div class="city">Loading...</div>
+              <div class="date">Loading...</div>
+            </section>
+            <div class="current">
+              <div class="temp">Loading<span>°c</span></div>
+              <div class="weather">Loading...</div>
+              <div class="hi-low">Loading...</div>
+            </div>
+          </main>
+       </div>
     </body>
 </html>
