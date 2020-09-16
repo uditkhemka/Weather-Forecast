@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="jquery-3.5.1.min.js"></script>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -10,8 +11,10 @@
     </head>
     <body>
         <div class="intro">Get Weather Updates Instantly</div>
+        <div id="debugg"></div>
+        <div id="debugg2"></div>
         <div class="s">
-            <input type="text" id="userinput" placeholder="Enter Your City">
+            <input type="text" id="userinput"/>           <!-- error here as it is not passing the input-->
         </div>
         <div class="cent">
             <button onclick="function1()">Get Weather</button>
