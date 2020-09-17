@@ -4,6 +4,12 @@
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  background-image: url(bg1.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
 .intro{
     text-align: center;
     font-size: 80px;
